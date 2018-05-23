@@ -166,14 +166,48 @@
 </body>
 
 <script>
-    var navLinks = document.querySelector('.navNarrow');
-    var narrowLinks = document.querySelector('.narrowLinks');
+    /* Questo piccolo Javascript, permette di creare una navbar totalmente responsive appoggiandosi a delle media query scritte nel css;
+    togliendo e aggiungendo le giuste classi, al momento opportuno;
 
+    @media (min-width: 1000px) {
+
+    nav .navWide {
+        display: block !important;
+    }
+
+    nav .navNarrow {
+        display: none !important;
+    }
+    }
+questa media query, mostra quando "incontra" uno schermo con larghezza minima 1000px, il menù nella forma estesa,
+e nasconde il menù ridotto per cellulari/tablet;
+
+@media (min-width: 550px) {
+
+    nav .navWide {
+        display: none;
+    }
+
+    nav .navNarrow {
+        display: block;
+    }
+}
+invece questa invece, fa l'inverso della precedente quando "incontra" uno schermo di larghezza minima 550px;
+
+    */
+    var navLinks = document.querySelector('.navNarrow');
+    //creo variabile navLinks, usando come selettore la classe 'navNarrow' ;
+    var narrowLinks = document.querySelector('.narrowLinks');
+    //creo variabile narrowLinks, usando come selettore la classe 'narrowLinks' ;
     navLinks.addEventListener('click', toggle);
+    /*creo un "event lister" per intercettare quando la variabile NavLinks, ovvero il div con classe '.navNarrow',
+    viene cliccata e attiva la funzione "toggle" descritta sotto */
 
     function toggle() {
         narrowLinks.classList.toggle('hidden');
     };
+    /* la funzione toggle, semplicemente, rimuove la classe css 'hidden' dalla variabile narrowLinks, ovvero il div con classe 'narrowLinks'
+    */
 
 </script>
 

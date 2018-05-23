@@ -774,7 +774,7 @@ nav .navNarrow .narrowLinks a {
 .logo-img {
     position: relative;
     width: 30%;
-    padding-top: itempx;
+
 
 }
 
@@ -845,6 +845,8 @@ nav .navNarrow .narrowLinks a {
 .item-6 {
     background-color: #e9cec4;
 }
+
+/* Utility tipografiche */
 
 
 .text-justify-centered {
