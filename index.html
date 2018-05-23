@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Your page title here :)</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Top navigation -->
+    <nav>
+        <div class="navWide u-full-width">
+            <div class="wideDiv">
+                <div class="nav-centered">
+                    <a href="#"><img class="logo-img" src="images/logo_shake.png"></a>
+                </div>
+                <div class="u-pull-left left-link-margin">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                </div>
+                <div class="u-pull-right right-link-margin" >
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                </div>
+            </div>
+        </div>
+        <div class="navNarrow">
+
+            <div class="nav-centered">
+                <span class="hamburger"> </span>
+                <img class="thumblogo-img" src="images/logo_shake.png" alt="Shake">
+
+            </div>
+
+            <div class="narrowLinks hidden">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="first-block">
+        <div class="row">
+
+            <img class="center-img" src="images/banana_chocolate.png">
+
+        </div>
+    </div>
+    <div class="second-block">
+        <div class="container">
+            <div class="row">
+                <div class="six columns"><a href="#"><img class="u-full-width center-div-img" src="images/banana_chocolate2.png"></a></div>
+                <div class="six columns">
+                    <p class="text-justify-centered">Lorem ipsum dolor sit amet, inimicus hendrerit ex sea, est eu cetero vivendo similique, augue legendos elaboraret mea ad. Mei everti aliquam offendit ei, docendi accusamus eu vix, an vel dicunt tamquam aliquando. Ne viris detracto vix, ad vis graece pericula scripserit, ea clita suscipiantur eos. Cu nec dico saepe. Vel suas oportere cu, eam ea vocibus admodum iracundia. Est impedit meliore ne, eu lorem fugit patrioque has, at regione epicurei has. Erant tibique ius eu. Graeci constituto ei pro.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="u-full-width">
+        <div class="grid-container">
+            <div class="grid-item item-1">
+
+                <img class="u-full-width" src="images/grid_image1.png">
+
+            </div>
+            <div class="grid-item item-2">
+
+                <img class="u-full-width" src="images/grid_image2.png">
+
+            </div>
+            <div class="grid-item item-3">
+
+                <img class="u-full-width" src="images/grid_image3.png">
+
+            </div>
+            <div class="grid-item item-4">
+
+                <img class="u-full-width" src="images/grid_image4.png">
+
+            </div>
+            <div class="grid-item item-5">
+
+                <img class="u-full-width" src="images/grid_image5.png">
+
+            </div>
+            <div class="grid-item item-6">
+                <img class="u-full-width" src="images/grid_image6.png">
+            </div>
+        </div>
+    </div>
+    <div class="third-block">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <h3>Informazioni Nutrizionali</h3>
+                </div>
+                <div class="six columns">
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th><strong>Name</strong></th>
+                                <th><strong>Age</strong></th>
+                                <th><strong>Sex</strong></th>
+                                <th><strong>Location</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dave Gamache</td>
+                                <td>26</td>
+                                <td>Male</td>
+                                <td>San Francisco</td>
+                            </tr>
+                            <tr>
+                                <td>Dwayne Johnson</td>
+                                <td>42</td>
+                                <td>Male</td>
+                                <td>Hayward</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+<script>
+    var navLinks = document.querySelector('.navNarrow');
+    var narrowLinks = document.querySelector('.narrowLinks');
+
+    navLinks.addEventListener('click', toggle);
+
+    function toggle() {
+        narrowLinks.classList.toggle('hidden');
+    };
+
+</script>
+
+</html>
