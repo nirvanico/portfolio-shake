@@ -637,9 +637,9 @@ there.
     }
 
     .logo-img {
-        position: relative;
-        width: 30%;
-        padding-top: 5px;
+        position: relative !important;
+        width: 30% !important;
+        padding-top: 5px !important;
 
     }
     .left-link-margin {
