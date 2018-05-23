@@ -807,16 +807,18 @@ nav .navNarrow .narrowLinks a {
 
 .first-block {
     background-color: #ebc0ad;
+    padding-bottom: 50px;
 }
 
 .second-block {
     background-color: #f58075;
-    padding-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px:
 }
 
 .third-block {
     background-color: #f7dab7;
-    padding-top: 30px;
+    padding-top: 50px;
 
 }
 
