@@ -602,6 +602,7 @@ there.
         margin-top: 10%;
     }
 
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -612,7 +613,7 @@ there.
         margin-top: 10%;
     }
     nav .navWide {
-        display: none;
+        display: none !important;
     }
 
     nav .navNarrow {
@@ -678,25 +679,24 @@ nav {
     border-bottom: 1px solid #000;
 
 }
-
+/* Sul documento CSS scrivo le caratteristiche stilistiche della navbar, la posizione, il colore e tutte le sue proprietà   */
 nav a {
     color: #000;
     cursor: pointer;
 }
 
+
 nav a:visited {
     color: #000;
-}
-
-nav .navWide {
-    display: none;
-    margin: 0 auto;
-
 }
 
 nav .navWide .wideDiv {
     text-align: center;
 
+}
+
+nav .navWide {
+    display: none;
 }
 
 nav .navWide .wideDiv a {
@@ -715,10 +715,6 @@ nav .navWide .wideDiv a {
     cursor: pointer;
 }
 
-/*Navbar is set to default with the "hamburger" and links on the left
-side of the screen. To move to the right of the screen, simply
-change the three "float: Left;" references to read "float: right;".*/
-
 nav .navNarrow .narrowLinks a {
     text-decoration: none;
     display: block;
@@ -729,26 +725,6 @@ nav .navNarrow .narrowLinks a {
 
 .hidden {
     display: none;
-}
-
-.hamburger {
-    position: relative;
-    display: inline-block;
-    width: 0.85em;
-    height: 0.8em;
-    margin-right: 0.7em;
-    border-top: 0.2em solid #000;
-    border-bottom: 0.2em solid #000;
-    cursor: pointer;
-}
-
-.hamburger:before {
-    content: "";
-    position: absolute;
-    top: 0.3em;
-    left: 0px;
-    width: 100%;
-    border-top: 0.2em solid #000;
 }
 
 
@@ -847,7 +823,6 @@ nav .navNarrow .narrowLinks a {
 }
 
 /* Utility tipografiche */
-
 
 .text-justify-centered {
     text-align: justify;

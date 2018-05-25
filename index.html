@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<!-- !DOCTYPE html definisce la versione di html che stiamo usando in questo caso, html5 --->
+<html lang="it">
+<!-- Il lang definisce la lingua del testo utlizzato nella pagina -->
 
 <head>
 
-    <!-- Basic Page Needs
+    <!-- Necessità di base della pagina
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Your page title here :)</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Shake - Lo yogurt rivoluzionario!</title>
 
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Il meta viewport permette al browser di intercettare la dimensione dello schermo che sta visualizzando la pagina, e adattare la scala, -->
 
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <!-- CSS
+    <!-- CSS, letteralmente fogli di stile, definiscono la parte grafica del sito web
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
-
-    <!-- Favicon
+    <!-- Siccome i fogli di stile sono su due file separati, li richiamiamo attraverso questi due tag
+    <!-- Il favicon definisce l'icona che mostrerà il browser
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -31,32 +29,37 @@
 
 <body>
 
-    <!-- Top navigation -->
+    <!-- Menu di navigazione -->
     <nav>
+       <!-- parte della navbar visibile da un dispositivo con schermo min 1000px -->
         <div class="navWide u-full-width">
             <div class="wideDiv">
                 <div class="nav-centered">
                     <a href="#"><img class="logo-img" src="images/logo_shake.png"></a>
                 </div>
                 <div class="u-pull-left left-link-margin">
+                   <!-- link allineati a sinistra -->
                     <a href="#first-block-anchor">Link 1</a>
                     <a href="#second-block-anchor">Link 2</a>
                 </div>
                 <div class="u-pull-right right-link-margin">
+                   <!-- link allineati a destra -->
                     <a href="#grid-block-anchor">Link 3</a>
                     <a href="#third-block-anchor">Link 4</a>
                 </div>
             </div>
         </div>
+        <!-- Parte della nav-bar visibile da dispositivo mobile -->
         <div class="navNarrow">
 
             <div class="nav-centered">
-                <span class="hamburger"> </span>
+                <img class="hamburger"src="images/hamburger.svg">
                 <img class="thumblogo-img" src="images/logo_shake.png" alt="Shake">
 
             </div>
 
             <div class="narrowLinks hidden">
+               <!-- la classe hidden viene utilizzata da javascript e consente la comparsa/scoparsa del menu -->
                 <a href="#first-block-anchor">Link 1</a>
                 <a href="#second-block-anchor">Link 2</a>
                 <a href="#grid-block-anchor">Link 3</a>
@@ -64,10 +67,42 @@
             </div>
         </div>
     </nav>
+    <!-- Questa è una navbar resposive, ovvero si appoggia al viewport e ad alcune media query scritte nel css, togliendo e aggiungendo le giuste classi, al momento opportuno, che ho riportato qua dal CSS:
 
-    <!-- Primary Page Layout
+        @media (min-width: 1000px) {
+
+        nav .navWide {
+            display: block !important;
+        }
+
+
+       Tutti gli elementi del tag nav, con classe navWide vengono mostrati. L'attributo aggiuntivo !important specifica che deve esse così anche nel caso avessimo dei conflitti nella classe navWide
+
+
+           nav .navNarrow {
+            display: none !important;
+        }
+        }
+
+
+        Tutti gli elementi del tag nav con classe navNarrow vengono nascosti quando la pagina è visualizzata su uno schermo di minimo 1000px
+        Questa media query, quindi con uno schermo grande mostra il div navWide mentre nasconde il div navNarrow
+
+
+        @media (min-width: 550px) {
+
+        nav .navWide {
+            display: none;
+        }
+
+        nav .navNarrow {
+            display: block;
+        }
+        }
+
+        Questa media query viceversa, su schermi piccoli (quali smartphone o tablet) nasconde la navWide e mostra la navNarrow
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <a ></a>
+    <a></a>
     <div class="first-block" id="first-block-anchor">
         <div class="row">
 
@@ -88,38 +123,38 @@
         </div>
     </div>
 
-        <div class="u-full-width">
-            <div class="grid-container" id="grid-block-anchor">
-                <div class="grid-item item-1">
+    <div class="u-full-width">
+        <div class="grid-container" id="grid-block-anchor">
+            <div class="grid-item item-1">
 
-                    <img class="u-full-width" src="images/grid_image1.png">
+                <img class="u-full-width" src="images/grid_image1.png">
 
-                </div>
-                <div class="grid-item item-2">
+            </div>
+            <div class="grid-item item-2">
 
-                    <img class="u-full-width" src="images/grid_image2.png">
+                <img class="u-full-width" src="images/grid_image2.png">
 
-                </div>
-                <div class="grid-item item-3">
+            </div>
+            <div class="grid-item item-3">
 
-                    <img class="u-full-width" src="images/grid_image3.png">
+                <img class="u-full-width" src="images/grid_image3.png">
 
-                </div>
-                <div class="grid-item item-4">
+            </div>
+            <div class="grid-item item-4">
 
-                    <img class="u-full-width" src="images/grid_image4.png">
+                <img class="u-full-width" src="images/grid_image4.png">
 
-                </div>
-                <div class="grid-item item-5">
+            </div>
+            <div class="grid-item item-5">
 
-                    <img class="u-full-width" src="images/grid_image5.png">
+                <img class="u-full-width" src="images/grid_image5.png">
 
-                </div>
-                <div class="grid-item item-6">
-                    <img class="u-full-width" src="images/grid_image6.png">
-                </div>
+            </div>
+            <div class="grid-item item-6">
+                <img class="u-full-width" src="images/grid_image6.png">
             </div>
         </div>
+    </div>
 
     <div class="third-block" id="third-block-anchor">
 
@@ -167,34 +202,34 @@
 
 <script>
     /* Questo piccolo Javascript, permette di creare una navbar totalmente responsive appoggiandosi a delle media query scritte nel css;
-    togliendo e aggiungendo le giuste classi, al momento opportuno;
+            togliendo e aggiungendo le giuste classi, al momento opportuno;
 
-    @media (min-width: 1000px) {
+            @media (min-width: 1000px) {
 
-    nav .navWide {
-        display: block !important;
-    }
+            nav .navWide {
+                display: block !important;
+            }
 
-    nav .navNarrow {
-        display: none !important;
-    }
-    }
-questa media query, mostra quando "incontra" uno schermo con larghezza minima 1000px, il menù nella forma estesa,
-e nasconde il menù ridotto per cellulari/tablet;
+            nav .navNarrow {
+                display: none !important;
+            }
+            }
+        questa media query, mostra quando "incontra" uno schermo con larghezza minima 1000px, il menù nella forma estesa,
+        e nasconde il menù ridotto per cellulari/tablet;
 
-@media (min-width: 550px) {
+        @media (min-width: 550px) {
 
-    nav .navWide {
-        display: none;
-    }
+            nav .navWide {
+                display: none;
+            }
 
-    nav .navNarrow {
-        display: block;
-    }
-}
-invece questa invece, fa l'inverso della precedente quando "incontra" uno schermo di larghezza minima 550px;
+            nav .navNarrow {
+                display: block;
+            }
+        }
+        invece questa invece, fa l'inverso della precedente quando "incontra" uno schermo di larghezza minima 550px;
 
-    */
+            */
     var navLinks = document.querySelector('.navNarrow');
     //creo variabile navLinks, usando come selettore la classe 'navNarrow' ;
     var narrowLinks = document.querySelector('.narrowLinks');
@@ -207,7 +242,7 @@ invece questa invece, fa l'inverso della precedente quando "incontra" uno scherm
         narrowLinks.classList.toggle('hidden');
     };
     /* la funzione toggle, semplicemente, rimuove la classe css 'hidden' dalla variabile narrowLinks, ovvero il div con classe 'narrowLinks'
-    */
+     */
 
 </script>
 
